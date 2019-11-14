@@ -1,0 +1,540 @@
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: #444;
+  /*background-color: #FFF5E6;*/
+  font-family: 'Raleway', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+/*===================================
+  リンク
+===================================*/
+a {
+  color: none;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+a:link{
+  color: #444;
+}
+a:visited{
+  color: #444;
+}
+.page-link{
+  width: 300px;
+  float: right;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.75em;
+}
+p > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/*===================================
+  ヘッダー
+===================================*/
+#header{
+  width: 100%;
+  height: 80px;
+  margin-bottom: 30px;
+  background-color: #FFF9A3;
+}
+#header h1{
+  padding: 10px 20px;
+  float: left;
+}
+
+/*===================================
+  ナビゲーション
+===================================*/
+#top-nav{
+  position: relative;
+  float: right;
+  width: 500px;
+  height: 90px;
+}
+.nav-menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 450px;
+  height: 80px;
+  list-style: none;
+  line-height: 80px;
+}
+.nav-menu a {
+  padding: 10px 15px;
+  background: #FFF9A3;
+  margin-right: 30px;
+}
+.nav-menu li {
+  float: right;
+}
+
+/*===================================
+  フッター
+===================================*/
+#footer{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #FFF9A3;
+}
+
+/*===================================
+  エラーメッセージエリア
+===================================*/
+.msg-area{
+  min-height: 30px;
+  margin: 10px 0 2z0px 0;
+}
+.msg-common-area{
+  height: 60px;
+}
+.err{
+  color: #EC407A;
+}
+.notes-err{
+  font-size: 0.75em;
+  color: #EC407A;
+}
+.notes-success{
+  font-size: 0.75em;
+  color: #807C52;
+}
+/*===================================
+  共通ページレイアウト
+===================================*/
+.site-width{
+  width: 980px;
+  margin: 0 auto;
+  /* border: 1px solid #FFDFA8; */
+}
+#main{
+  overflow: hidden;
+}
+/* 1カラムページ */
+.page-1colum{
+  width: 940px;
+  margin: 0 20px 30px 20px; ;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #CCCBC0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* 2カラムページ */
+.page-2colum{
+  width: 500px;
+  margin: 0 120px 30px 120px;
+  float: left;
+}
+
+/* 新規登録、ログイン、パスワード変更関連、退会ページ */
+.page-login{
+  width: 720px;
+  margin: 0 120px 30px 120px;
+  padding: 20px;
+  border: 1px solid #807C52;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.page-login form{
+  width: 380px;
+  margin: 0 150px;
+  overflow: hidden;
+}
+.page-login input[type="email"],
+.page-login input[type="password"],
+.page-login input[type="text"]{
+  width: 380px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #CCCBC0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+/* プロフ、ガテゴリー、口座編集画面ページ */
+.page-edit{
+  width: 500px;
+  padding: 20px 20px;
+  border: 1px solid #807C52;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.page-edit form{
+  width: 460px;
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+.page-edit select,
+.page-edit input[type="date"],
+.page-edit input[type="email"],
+.page-edit input[type="text"],
+.page-edit input[type="number"],
+.page-edit input[type="tel"]{
+  width: 340px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #CCCBC0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.page-edit select,
+.page-edit input[type="date"]{
+  cursor: pointer;
+}
+
+/* ページタイトル */
+.are-title{
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.page-prev{
+  width: 100px;
+  margin: 20px;
+  float: left;
+}
+.page-next{
+  width: 100px;
+  margin: 20px;
+  text-align: right;
+  float: right;
+}
+.page-1colum-title{
+  width: 680px;
+  padding: 15px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.page-2colum-title{
+  width: 460px;
+  padding: 15px 0;
+  text-align: center;
+  overflow: hidden; 
+}
+
+/* テーブル共通レイアウト */
+table{
+  width: 420px;
+  box-sizing: border-box;
+  border: 2px solid #807C52;
+  border-collapse: collapse;
+}
+tbody tr{
+  border-bottom: 1px dotted #807C52;
+  box-sizing: border-box;
+  height: 50px;
+  text-align: center;
+}
+.tabel-total th{
+  width: 110px;
+}
+
+/*=====================================
+  個別ページレイアウト
+=====================================*/
+/* トップページ */
+.index-box{
+  float: left;
+  width: 480px;
+  padding: 0 0 20px 20px;
+  box-sizing: border-box;
+}
+.box-item{
+  width: 460px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #CCCBC0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.item-area1{
+  margin-bottom: 20px;
+}
+
+.item-title{
+  text-align: center;
+  padding: 10px 0;
+}
+.item-in, .item-out, .item-tra{
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 10px;
+  border: 2px solid #807C52;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.item-area3-last{
+  margin-bottom: 0;
+}
+.item-in > p,
+.item-out > p,
+.item-tra > p{
+  width: 100px;
+  float: left;
+}
+.item-in{
+  float: left;
+}
+.item-out{
+  float: right;
+}
+.item-tra{
+  margin: 0 auto 10px;;
+}
+
+/* 伝票入力ページ */
+.slip-tab-area{
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.tab-item{
+  width: calc(100%/3);
+  height: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  text-decoration: none;
+  list-style: none;
+  border-bottom: 1px solid #807C52;
+  border-radius: 10px 10px 0 0;
+  float: left;
+  display: block;
+}
+.tab-item:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.tab-item.tab-success{
+  border: 1px solid #807C52;
+  border-bottom: none;
+}
+/* class名「panel-group」内の要素を初期非表示設定とする*/
+.slip-deposit,
+.slip-trans{
+  display: none;
+}
+/* class名「panel-group」内の切替のため「js_tab_show」が付与された場合に表示 */
+.js_panel_show{
+  display: block;
+}
+.page-slip form{
+  width: 500px;
+  padding: 20px 60px;
+  border: 1px solid #807C52;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.page-slip input[type="date"], 
+.page-slip select,
+.page-slip input[type="text"]{
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #CCCBC0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.page-slip input[type="date"]{
+  width: 380px;
+  padding: 10px;
+  cursor: pointer;
+}
+.slip-category-area,
+.slip-price-area{
+  overflow: hidden;
+}
+.slip-category-area select{
+  width: 178px;
+  float: left;
+}
+.main-cate,
+.deposit-bank{
+  margin-right: 20px;
+}
+.slip-price-area > .bank{
+  width: 149px;
+  margin-right: 20px;
+  float: left;
+}
+.slip-price-area > .price{
+  width: 209px;
+  padding: 10px;
+  float: right;
+}
+.slip-comment{
+  width: 380px;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #CCCBC0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.slip-comment:focus{
+  outline: 3px solid #CCCBC0;
+}
+.text-count{
+  margin-bottom: 20px;
+  float: right;
+}
+
+/* 集計ページ */
+.page-total-left, .page-total-right{
+  text-align: center;
+  float: left;
+}
+.page-total-left{
+  margin-left: 20px;
+}
+.page-total-left{
+  margin-right: 20px;
+}
+
+/* 入出金一覧ページ */
+.page-list{
+  width: 740px;
+  height: 500px;
+  margin: 0 120px 30px 120px; ;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #CCCBC0;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.list-item{
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 20px;
+  border: 2px solid #807C52;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.list-item > p{
+  width: 80px;
+  float: left;
+}
+.list-item > p:last-child{
+  width: 150px;
+}
+.page-list > .item-in{
+  float: left;
+}
+.page-list > .item-out{
+  float: right;
+}
+.page-list > .item-tra{
+  margin: 0 auto 20px;
+}
+
+/* プロフィール編集画面 */
+.addr-area{
+  overflow: hidden;
+}
+.addr{
+  float: left;
+}
+
+/* 退会ページ */
+.page-draw input[type="submit"]{
+  width: 340px;
+  height: 50px;
+  margin: 20px 20px 30px 20px;
+  border-radius: 25px;
+}
+/*=====================================
+  ボタン
+=====================================*/
+.btn-container{
+  width: 380px;
+  height: 60px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.btn{
+  width: 100px;
+  height: 60px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #807C52;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btn-regist{
+  float: right;
+}
+.btn-delete{
+  float: left;
+}
+
+/*=====================================
+  サイドメニュー
+=====================================*/
+aside{
+  width: 200px;
+  min-height: 500px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #807C52;
+  border-radius: 10px;
+  box-sizing: border-box;
+  float: right;
+}
+.side-nav{
+  margin-top: 20px;
+  padding: 0;
+}
+.side-nav li{
+  padding: 10px 20px;
+  text-align: center;
+  list-style: none;
+}
+
+/*=====================================
+  レスポンシブ化
+=====================================*/
+/*@media screen and (max-width: 479px) { 
+  ウィンドウ幅が最大479pxまでの場合に適用
+
+}*/
