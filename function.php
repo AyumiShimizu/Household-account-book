@@ -280,12 +280,9 @@ function setClassErr($key){
 // DB接続関数
 function dbConnect(){
   // DBへの接続準備
-//  $dsn = 'mysql:dbname=サーバー名;host=localhost;charset=utf8';
-//  $dsn = 'mysql:dbname=ayumis_household;host=mysql57.ayumis.sakura.ne.jp;charset=utf8';
-  $dsn = 'mysql:dbname=Housekeeping_book;host=localhost;charset=utf8';
-//  $user = 'ayumis';
+  // 記載情報はローカル環境時の情報
+  $dsn = 'mysql:dbname=サーバー名;host=localhost;charset=utf8';
   $user = 'root';
-//  $password = 'ayumis-20191112';  
   $password = 'root';
   $options = array(
     // SQL実行失敗時にはエラーコードを表示
